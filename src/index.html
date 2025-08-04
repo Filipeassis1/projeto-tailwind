@@ -56,8 +56,11 @@
       </nav>
     </header>
 
+
     <main class="container">
-      <div class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden">
+      <div
+        class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden max-sm:pt-20"
+      >
         <img
           class="absolute inset-0 -z-10 size-full object-cover"
           src="./img/floresta.jpg"
@@ -65,21 +68,21 @@
         />
 
         <div
-          class="bg-verde-950 inline-flex mb-8 gap-8 items-center py-1 pr-1 pl-4 rounded-full"
+          class="font-medium bg-verde-950/70 inline-flex flex-col  p-4 mb-8 gap-4 items-center  rounded-full max-sm:w-full  sm:bg-verde-950 sm:flex-row sm:py-1 sm:pr-1 sm:pl-4 sm:gap-8"
         >
-          vagas para dezembro abertas
+          Vagas abertas para dezembro
           <a
             class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full"
             href="/"
-            >Reservae Hoje</a
+            >Reserve Hoje</a
           >
         </div>
 
-        <h1 class="text-5xl max-w-screen-sm text-balance mb-20">
+        <h1 class="text-4xl max-w-screen-sm text-balance mb-20 sm:text-5xl">
           Venha experimentar a vida na floresta
         </h1>
 
-        <div class=" flex justify-between items-end text-sm">
+        <div class="sm:flex flex-col  justify-between items-end text-sm sm:flex-row">
           <p>
             melhores locais para visitar
             <a
@@ -90,18 +93,55 @@
           </p>
 
           <div>
-            <p  class="uppercase mb-2">Recomendado por</p>
+            <p class="uppercase mb-2 mt-4 sm:mt-0">Recomendado por</p>
             <p class="flex items-center gap-4">
-                <img class="w-28" src="./img/parceiros/wildbeast.svg" alt="wildbeats">
+              <img
+                class="w-28"
+                src="./img/parceiros/wildbeast.svg"
+                alt="wildbeats"
+              />
 
-                <span> | </span>
+              <span> | </span>
 
-                Revista Nacional
+              Revista Nacional
             </p>
           </div>
-
         </div>
       </div>
     </main>
+
+    <!-- ACOMODAÇÕES -->
+
+    <section id="acomodacoes" class="container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16">
+
+        <div class="bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom"> 
+            <h2 class="text-white mb-8 text-4xl lg:text-5xl">Refúgio Natural</h2>
+            <ul class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl">
+                <li ><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente a natureza de perto</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conect-se com a natureza</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Desconecte-se do digital</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a vida selvagem</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolhasua cabine preferida</li>
+            </ul>
+        </div>
+
+        <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+            <div class="col-span-full grid relative"> 
+                <img  class="h-52 w-full object-cover rounded-xl" src="./img/casa1.jpg" alt="casa 1">
+                <span class="uppercase absolute top-4 right-4 text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm">ruby</span>
+            </div>
+
+            <div>
+                <img src="./img/casa2.jpg" alt="casa 2">
+                <span>span2</span>
+            </div>
+
+            <div>
+                <img src="./img/casa3.jpg" alt="casa 3">
+            </div>
+        </div>
+
+    </section>
+
   </body>
 </html>
