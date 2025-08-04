@@ -708,6 +708,10 @@ video {
   flex-direction: column;
 }
 
+.content-end {
+  align-content: flex-end;
+}
+
 .items-end {
   align-items: flex-end;
 }
